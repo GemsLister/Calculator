@@ -109,7 +109,7 @@ button:hover{
     grid-row: span 2;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (min-width: 425px){
     .inputNumOperators{
         padding: 0 3rem 0 3rem;
     }
