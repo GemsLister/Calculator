@@ -109,8 +109,93 @@ button:hover{
     grid-row: span 2;
 }
 
-@media screen and (min-width: 425px){
+@media only screen and (max-width: 425px) {
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: var(--fontFamily);
+        background-color: var(--bgColor);
+    }
+    
+    header{
+        color: #f0f0f0;
+        padding: 0 0 1rem;
+    }
+    
     .inputNumOperators{
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
         padding: 0 3rem 0 3rem;
+    }
+    
+    .inputNumOperators input{
+        border-style: none;
+        border-radius: 8px;
+        font-size: 1.5rem;
+        padding: 0.7rem;
+        height: 5rem;
+    }
+    
+    .numberOperators{
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        gap: 10px;
+    }
+    
+    button{
+        color: white;
+        box-shadow: var(--boxShadow);
+        border-style: none;
+        border-radius: 8px;
+        font-family: var(--fontFamily);
+        font-size: 1.5rem;
+        height: 5rem;
+        width: 5rem;
+        background-color: var(--numColor);
+        cursor: pointer;
+    }
+    
+    button:hover{
+        background-color: var(--numColorHover);
+    }
+    
+    .erase{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .clear, .erase{
+        background-color: var(--clearErase);
+    }
+    
+    .clear:hover, .erase:hover{
+        background-color: var(--clearEraseHover);
+    }
+    
+    .equals{
+        background-color: var(--equals);
+    }
+    
+    .equals:hover{
+        background-color: var(--equalsHover);
+    }
+    
+    .operator{
+        background-color: var(--operators);
+    }
+    
+    .operator:hover{
+        background-color: var(--operatorsHover);
+    }
+    
+    .numberOperators button:nth-child(16){
+        height: 10.8rem;
+        grid-row: span 2;
     }
 }
