@@ -2,4 +2,18 @@
     .inputNumOperators{
         padding: 3rem;
     }
+
+    .inputNumOperators input{
+        min-height: 3rem;
+    }
+
+    button{
+        min-height: 3rem;
+        min-width: 3rem;
+    }
+
+    .numberOperators button:nth-child(16){
+        height: 6.8rem;
+        grid-row: span 2;
+    }
 }
