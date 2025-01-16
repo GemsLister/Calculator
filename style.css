@@ -40,7 +40,7 @@ header{
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    padding: 0 3rem 0 3rem;
+    /* padding: 0 3rem 0 3rem; */
 }
 
 .inputNumOperators input{
@@ -48,7 +48,7 @@ header{
     border-radius: 8px;
     font-size: 1.5rem;
     padding: 0.7rem;
-    height: 5rem;
+    min-height: 5rem;
 }
 
 .numberOperators{
@@ -64,8 +64,8 @@ button{
     border-radius: 8px;
     font-family: var(--fontFamily);
     font-size: 1.5rem;
-    height: 5rem;
-    width: 5rem;
+    min-height: 5rem;
+    min-width: 5rem;
     background-color: var(--numColor);
     cursor: pointer;
 }
